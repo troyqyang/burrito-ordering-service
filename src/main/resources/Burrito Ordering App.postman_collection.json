@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "fea65946-d675-448b-9d76-7c84da56bde7",
+		"name": "Burrito Ordering App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/basic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tortilla\": \"CORN\",\n    \"protein\": \"STEAK\",\n    \"vegetables\": {\n        \"CABBAGE\": 1,\n        \"CORN\": 3,\n        \"JALAPENOS\": 5\n    },\n    \"salsa\": \"HOT\",\n    \"extras\": {\n        \"AVOCADO\": 2\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tortilla\": \"CORN\",\n    \"protein\": \"STEAK\",\n    \"vegetables\": {\n        \"CABBAGE\": 1,\n        \"CORN\": 3,\n        \"JALAPENOS\": 5\n    },\n    \"salsa\": \"hot\",\n    \"extras\": {\n        \"AVOCADO\": 2\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
