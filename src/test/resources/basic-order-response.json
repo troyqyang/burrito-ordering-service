@@ -1,0 +1,13 @@
+{
+  "tortilla": "CORN",
+  "protein": "STEAK",
+  "vegetables": {
+    "CABBAGE": 1,
+    "CORN": 3,
+    "JALAPENOS": 5
+  },
+  "salsa": "HOT",
+  "extras": {
+    "AVOCADO": 2
+  }
+}
